@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
 
   deploy: 
     needs: build
-    runs-on: aws-ec2    
+    runs-on: self-hosted   
     steps:
       - name: Pulling image from docker hub
         run: docker pull ndarshan884/assignmentimage:latest
