@@ -68,7 +68,7 @@ resource "aws_security_group" "allow_http_ssh" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-0866a04d72a1f5479" 
+  ami           = "ami-05fb0b8c1424f266b" 
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.allow_http_ssh.id]
