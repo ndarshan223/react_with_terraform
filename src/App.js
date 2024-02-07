@@ -17,7 +17,7 @@ function App() {
         <br></br>
         <button style={{ fontSize: '20px', padding: '10px 20px' }} onClick={() => window.open("https://github.com/ndarshan223/assignment/blob/main/.github/workflows/cicd.yml", "_blank")}>Configuration file for CICD of Github workflow Self hosted runner</button>
 
-        <h4> To validate the CICD functionality, Raise a pr to main branch, Once approved from my end, the cicd flow gets triggerd via github workflow  on custom runner provisioned on AWS Ec2 and will be deloyed as docker container in ec2 instance which will be accessible over this link</h3>
+        <h4> To validate the CICD functionality, Raise a pr to main branch, Once approved from my end, the cicd flow gets triggerd via github workflow  on custom runner provisioned on AWS Ec2 and will be deloyed as docker container in ec2 instance which will be accessible over this link</h4>
       </header>
     </div>
   );
